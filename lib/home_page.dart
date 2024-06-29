@@ -75,11 +75,14 @@ class _HomePageState extends State<HomePage> {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     color: Colors.green),
-                child: ListView.builder(itemBuilder: (builder, index) {
-                  return ListTile(
-                    title: Text('${hometModel[index].title}'),
-                  );
-                }),
+                child: ListView.builder(
+                    itemCount: hometModel.length,
+                    itemBuilder: (context, index) {
+                      return ListTile(
+                        title: Text('${hometModel[index].title}'),
+                        subtitle: Text(${hometModel[index].}),
+                      );
+                    }),
               ),
             )
           ],

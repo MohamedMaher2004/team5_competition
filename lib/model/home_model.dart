@@ -1,10 +1,10 @@
-class model {
+class Myexcerise {
   late final String title;
-  late final String subtitlepart1;
-  late final String subtitlepart2;
+  late final String date;
 
-  model(
+
+  Myexcerise(
       {required this.title,
-      required this.subtitlepart1,
-      required this.subtitlepart2});
+      required this.date,
+
 }
