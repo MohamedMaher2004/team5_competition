@@ -13,16 +13,14 @@ class _HomePageState extends State<HomePage> {
   var index = 1;
   List<Widget> Pages = [HomePage()];
 
-  List<model> hometModel = [
-    model(
+  List<Myexcerise> hometModel = [
+    Myexcerise(
       title: 'chest game',
-      subtitlepart1: '22/7',
-      subtitlepart2: '5:00',
+      date: '22/7 5:00',
     ),
-    model(
+    Myexcerise(
       title: 'back game',
-      subtitlepart1: '22/7',
-      subtitlepart2: '6:00',
+      date: '22/7 6:00',
     ),
   ];
 
@@ -80,7 +78,7 @@ class _HomePageState extends State<HomePage> {
                     itemBuilder: (context, index) {
                       return ListTile(
                         title: Text('${hometModel[index].title}'),
-                        subtitle: Text(${hometModel[index].}),
+                        subtitle: Text('${hometModel[index].date}'),
                       );
                     }),
               ),
