@@ -74,11 +74,16 @@ class _HomePageState extends State<HomePage> {
                     borderRadius: BorderRadius.circular(20),
                     color: Colors.green),
                 child: ListView.builder(
+                    shrinkWrap: true,
                     itemCount: hometModel.length,
                     itemBuilder: (context, index) {
                       return ListTile(
                         title: Text('${hometModel[index].title}'),
                         subtitle: Text('${hometModel[index].date}'),
+                        trailing: ElevatedButton(
+                          onPressed: () {},
+                          child: Text('Pending'),
+                        ),
                       );
                     }),
               ),

@@ -3,4 +3,6 @@ class Myexcerise {
   late final String date;
 
   Myexcerise({required this.title, required this.date});
+
+  getlist(String tiltle, String date) {}
 }
